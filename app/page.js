@@ -94,7 +94,7 @@ function LociRing({ cell, activeTick }) {
       {Array.from({ length: TOTAL_LOCI }, (_, i) => {
         const pos = nodePosition(i);
         const value = cell.loci[i];
-        const isActive = i === activeTick || t4Partner(activeTick) === i;
+        const isActive = activeTick !== null && (i === activeTick || t4Partner(activeTick) === i);
         return (
           <g key={i} className="ring-locus-group">
             <title>{LOCUS_TOOLTIPS[i]}</title>
