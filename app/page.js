@@ -653,7 +653,9 @@ export default function T4CellPage() {
             font-family: var(--font-body), sans-serif;
             padding: 48px 20px 80px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
           }
 
           .sheet {
